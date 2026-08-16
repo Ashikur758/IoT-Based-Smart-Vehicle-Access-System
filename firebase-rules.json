@@ -1,0 +1,14 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "overview": {
+      ".read": false,
+      ".write": false
+    },
+    "vehicle_logs": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}
