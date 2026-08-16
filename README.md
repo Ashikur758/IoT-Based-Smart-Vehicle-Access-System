@@ -1,7 +1,7 @@
 # 🚗 IoT-Based Smart Vehicle Access System
 
 <p align="center">
-  <img src="[Project_Images/project-overview.jpg](https://github.com/Ashikur758/IoT-Based-Smart-Vehicle-Access-System/blob/ee8a509d162f62605d3f69a9552b59a3a4c77e84/picture%201.png)" alt="Smart Vehicle Access System" width="850">
+  <img src="picture 1.png" alt="Smart Vehicle Access System" width="850">
 </p>
 
 <p align="center">
