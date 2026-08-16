@@ -1,0 +1,20 @@
+{
+  "overview": {
+    "total_capacity": 10,
+    "inside": 0,
+    "total_entry": 0,
+    "total_exit": 0
+  },
+  "vehicle_logs": {
+    "-AUTO_ID-": {
+      "name": "Example User",
+      "vehicle_no": "EXAMPLE-001",
+      "type": "Car",
+      "category": "Student",
+      "access": "Entry",
+      "status": "Inside",
+      "method": "RFID",
+      "timestamp": "2026-01-01 10:00:00 AM"
+    }
+  }
+}
