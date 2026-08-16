@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Smart Vehicle Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header-container">
+    <div class="clock-box">
+      <div class="time" id="live-time">00:00:00</div>
+      <div class="date" id="live-date">Loading date...</div>
+    </div>
+
+    <div class="header-title-container">
+      <div class="header-title">
+        IoT Smart Vehicle Management
+        <span class="connection-status status-disconnected" id="conn-status">
+          Connecting...
+        </span>
+      </div>
+    </div>
+
+    <div class="header-spacer"></div>
+  </div>
+
+  <div class="carousel-wrapper" id="carousel-wrapper">
+    <div class="carousel-dots" id="carousel-dots"></div>
+  </div>
+
+  <div class="section-title">General Overview</div>
+  <div class="card-grid">
+    <div class="card capacity">
+      <h2 id="total-capacity">10</h2>
+      <p>Total Capacity</p>
+    </div>
+    <div class="card inside">
+      <h2 id="vehicles-inside">0</h2>
+      <p>Vehicles Inside</p>
+    </div>
+    <div class="card entry">
+      <h2 id="total-entry">0</h2>
+      <p>Total Entry</p>
+    </div>
+    <div class="card exit">
+      <h2 id="total-exit">0</h2>
+      <p>Total Exit</p>
+    </div>
+  </div>
+
+  <div class="section-title">Category Inside Breakdown</div>
+  <div class="card-grid">
+    <div class="card teacher">
+      <h2 id="teachers-inside">0</h2>
+      <p>Teachers Inside</p>
+    </div>
+    <div class="card student">
+      <h2 id="students-inside">0</h2>
+      <p>Students / Staff Inside</p>
+    </div>
+    <div class="card guest">
+      <h2 id="guests-inside">0</h2>
+      <p>Guests Inside</p>
+    </div>
+  </div>
+
+  <div class="section-title">Search & Filter Logs</div>
+  <div class="search-container">
+    <div class="search-grid">
+      <div class="search-group">
+        <label>Search (Name / Vehicle No)</label>
+        <input type="text" id="search-input" placeholder="Type Name or Vehicle No...">
+      </div>
+
+      <div class="search-group">
+        <label>Category Filter</label>
+        <select id="filter-category">
+          <option value="All">All Categories</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Student">Student</option>
+          <option value="Staff">Staff</option>
+          <option value="Guest Teacher">Guest Teacher</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="search-group">
+        <label>Access Filter</label>
+        <select id="filter-access">
+          <option value="All">All Access Types</option>
+          <option value="Entry">Entry</option>
+          <option value="Exit">Exit</option>
+        </select>
+      </div>
+
+      <div class="search-group">
+        <label>Filter By Date</label>
+        <input type="date" id="filter-date">
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Vehicle Management Log</div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Name</th>
+          <th>Vehicle No</th>
+          <th>Type</th>
+          <th>Category</th>
+          <th>Access</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="logs-table"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
