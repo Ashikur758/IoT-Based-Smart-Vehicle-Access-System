@@ -56,6 +56,9 @@ The project is designed to demonstrate secure vehicle access control together wi
 ---
 
 ## 🏗️ System Architecture
+<p align="center">
+  <img src="Circuit Diagram.png" alt="Smart Vehicle Access System" width="850">
+</p>
 
 ```text
                     🚗 VEHICLE
